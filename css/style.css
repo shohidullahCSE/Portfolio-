@@ -97,7 +97,9 @@ text-decoration: none;
     align-items: center;
     min-height: 80vh;
 }
-.hero-img{
+.hero-img,
+.resume-img
+{
     max-width: 100%;
     height: auto;
     margin: 0 auto;
