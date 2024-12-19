@@ -11,6 +11,9 @@ body{
 .navbar{
     position: sticky;
     top: 0;
+    background-color: rgba(34,34, 34, 0.25);
+    /* backdrop-filter: blur(4px); */
+    border-bottom: 1px solid #333;
     z-index: 1000;
 } 
 .nav-continer{
@@ -46,4 +49,13 @@ text-decoration: none;
 }
 .nav-item-links:hover{
     color: #3b82f6;
+    }
+
+    @media (max-width:873px) {
+        .nav-continer{
+           display: block;
+        }
+        .nav-item{
+            padding: 0;
+        }
     }
