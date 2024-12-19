@@ -12,7 +12,7 @@ body{
     position: sticky;
     top: 0;
     background-color: rgba(34,34, 34, 0.25);
-    /* backdrop-filter: blur(4px); */
+     backdrop-filter: blur(4px); 
     border-bottom: 1px solid #333;
     z-index: 1000;
 } 
@@ -126,4 +126,80 @@ text-decoration: none;
     font-size: 1rem;
     line-height: 2rem;
     text-align: justify;
+}
+/* resume-section */
+.resume-container{
+    margin-top: 1rem;
+}
+.resume-sub-container{
+     /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    align-items: center; 
+}
+
+.subtitle{
+    font-size: 1.25rem;
+    line-height: 1.6rem;
+    margin-bottom: 0;
+}
+.line{
+    background-color: #333;
+    width: 100px;
+    height: 2px;
+    margin: 0.25rem 0 2rem 0;
+}
+.inner-line{
+    background-color:rgb(59 130 246);
+    width: 40px;
+    height: 2px;
+    margin: 0.25rem 0 2rem 0;
+}
+.resume-list{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #333;
+}
+.resume-duration-container{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    align-items: center;
+    padding-left: 2rem;
+
+}
+.round-div{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    background-color: #222;
+    position: absolute; /*??*/
+    left: -13px;
+}
+.resume-duration{
+    background-color: black;
+    width: auto;
+    border-radius: 1.5rem;
+    margin: 1rem 0;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+.resume-company{
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+.resume-designation{
+    color: gray;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    margin: 0;
 }
