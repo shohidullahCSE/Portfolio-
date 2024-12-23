@@ -237,7 +237,7 @@ text-decoration: none;
     background-color: #444;
     height: 3rem;
 }
-.certificate-name{
+.certificate-name,.project-name{
     color: white;
     font-size: 14px;
     line-height: 20px;
@@ -246,7 +246,10 @@ text-decoration: none;
 }
 .certificate-org-name,
 .certificate-date,
-.certificate-link{
+.certificate-link,
+.project-description,
+.project-link
+{
     font-size: 12px;
     line-height: 16px;
     color: #777;
@@ -312,9 +315,26 @@ text-decoration: none;
     grid-template-columns: repeat(3,minmax(0,1fr));
     gap: 2rem;
     margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 .project-list{
     margin-top: 2rem;
     border: 1px solid #333;
     border-radius: 2rem;
+}
+.project-list:hover{
+    background-color: #333;
+}
+.project-details{
+    padding: 1rem;
+    text-align: justify;
+}
+.project-img{
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+.project-name,
+.project-description,
+.project-link{
+    padding-left: 1rem;
 }
