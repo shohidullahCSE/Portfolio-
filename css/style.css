@@ -271,3 +271,36 @@ text-decoration: none;
     margin: 2rem auto;
     display: block;
 }
+/* skill design */
+.skills-sub-container{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.skills-progress-container{
+    margin: 1rem 0;
+}
+.skills-progress{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skill{
+    font-size: 13px;
+}
+.percentage{
+    color: #888;
+    font-size: 11px;
+}
+.progress{
+    height: 0.5rem;
+    width: 100%;
+    border: 2px solid #444;
+    border-radius: 0.5rem;
+    accent-color: #444;
+}
+.progress::-webkit-progress-value{
+    background-color: rgb(59, 130, 246);
+}
